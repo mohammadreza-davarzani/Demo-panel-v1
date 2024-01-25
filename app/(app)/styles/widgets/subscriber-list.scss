@@ -1,0 +1,195 @@
+.subscriber-management {
+  overflow: auto;
+
+  &-list {
+    &-card {
+      border-radius: 1.25rem !important;
+      width: 95%;
+      margin: 1rem auto;
+      height: 12.938rem;
+      position: relative;
+      overflow: visible !important;
+
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 101%;
+        height: 101.5%;
+        border-radius: 1.25rem !important;
+        transform: translate(-2px, -2px);
+        background: linear-gradient(
+          327deg,
+          rgb(125, 177, 221) 10%,
+          rgb(158, 191, 218) 25%,
+          rgb(255, 255, 255) 35%,
+          rgb(255, 255, 255) 40%,
+          rgb(158, 191, 218) 75%,
+          rgb(125, 177, 221) 88%
+        );
+        z-index: 99;
+      }
+
+      &-body {
+        border-radius: 1.25rem !important;
+        height: 12.938rem;
+        border: 1px solid rgb(149, 160, 169) !important;
+        position: relative;
+        z-index: 99;
+        margin: 0;
+        // box-shadow: 0 4px 14px 0 rgba(47, 83, 109, 0.06) !important;
+        box-shadow:
+          rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+          rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+        background-color: #fff;
+        overflow: visible;
+      }
+
+      &-header {
+        display: flex;
+        margin: 0 0 1.5rem 0;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+        h1 {
+          font-size: 14px;
+          color: #4e4e53;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 10px;
+          text-transform: capitalize;
+          margin-bottom: 0.8rem;
+        }
+
+        p {
+          color: #000;
+          font-size: 13px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 10px;
+          /* 76.923% */
+          text-transform: capitalize;
+        }
+      }
+
+      &-wrapper-icon {
+        background-color: #f2f2f2;
+        border-radius: 0.25rem;
+        width: 2rem;
+        height: 1.5rem;
+        padding: 0.2rem;
+        color: #247bc1;
+        cursor: pointer;
+        margin-right: 0.5rem;
+      }
+    }
+
+    &-add-card {
+      width: 95%;
+      margin: 1rem auto;
+      height: 12.938rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      align-items: center;
+      border-radius: 1.25rem;
+      border: 1px dashed #989aa3;
+      background: #fff;
+      box-shadow:
+        rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+        rgba(60, 64, 67, 0.15) 0px 2px 6px 2px !important;
+      transition: 0.3s;
+
+      &-icon {
+        color: #4e4e53;
+      }
+
+      p {
+        color: #4e4e53;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 13.648px;
+        /* 85.297% */
+        text-transform: capitalize;
+      }
+
+      &:hover {
+        border-radius: 1.25rem;
+        border: 1px solid #f4f9ff;
+        background: #339af0;
+        box-shadow: 0 4px 14px 0 rgba(47, 83, 109, 0.09);
+
+        .subscriber-management-list-add-card-icon {
+          color: white !important;
+        }
+
+        p {
+          color: white;
+        }
+      }
+    }
+  }
+}
+
+.panel.dark {
+  .m-849cf0da {
+    color: #e9ecef !important;
+  }
+
+  .subscriber-management {
+    &-list {
+      &-card {
+        &-body {
+          background: #25262b;
+          box-shadow: rgba(177, 177, 177, 0.2) 0px 4px 8px 0px;
+        }
+
+        &-header {
+          h1 {
+            color: #86868a;
+          }
+
+          p {
+            color: #989aa3;
+          }
+        }
+
+        &-wrapper-icon {
+          background-color: #66666c;
+          color: white;
+        }
+      }
+
+      &-add-card {
+        background: #25262b;
+        box-shadow: rgba(177, 177, 177, 0.2) 0px 4px 8px 0px;
+
+        &-icon {
+          color: white;
+        }
+
+        p {
+          color: white;
+        }
+
+        &:hover {
+          background: #339af0;
+          box-shadow: 0 4px 14px 0 rgba(47, 83, 109, 0.09);
+          border: 1px solid #66666c;
+
+          .subscriber-management-list-add-card-icon {
+            color: white !important;
+          }
+
+          p {
+            color: white;
+          }
+        }
+      }
+    }
+  }
+}

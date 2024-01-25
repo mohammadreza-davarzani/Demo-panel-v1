@@ -1,0 +1,103 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Layouts */
+@import "layout/authentication";
+/* Pages */
+@import "page/login";
+
+/* Entities */
+@import "entities/tags";
+@import "entities/textarea";
+@import "entities/empty-content";
+@import "entities/add-subscriber-form";
+@import "entities/show-subscriber-information";
+
+/* Features */
+@import "features/add-subscriber-button";
+
+/* Widgets */
+@import "widgets/empty-page";
+@import "widgets/subscriber-list";
+
+/* Global */
+.min-h-screen {
+  min-height: 100vh;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
+.mantine-MultiSelect-pill {
+  padding-left: 0 !important;
+}
+
+.m-7cda1cd6[data-with-remove] {
+  --_pill-padding-right: 0.5rem !important;
+}
+
+.mantine-InputWrapper-root {
+  position: relative;
+}
+
+.mantine-InputWrapper-error {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+
+  transform: translateY(100%);
+}
+
+.mantine-Breadcrumbs-separator {
+  margin-top: 0.5rem;
+}
+
+.mantine-Container-root {
+  padding: 0 !important;
+  height: 100% !important;
+}
+
+.m-849cf0da {
+  color: #777 !important;
+}
+
+.m-f678d540 {
+  text-decoration: none !important;
+}
+
+.panel {
+  &.dark {
+    .mantine-Card-root {
+      background-color: transparent;
+    }
+
+    .subscriber-management-list-card::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 101%;
+      height: 101.5%;
+      border-radius: 1.25rem !important;
+      transform: translate(-2px, -2px);
+      background: linear-gradient(
+        327deg,
+        rgb(125, 177, 221) 10%,
+        rgb(158, 191, 218) 25%,
+        rgb(26 27 30) 35%,
+        rgb(26 27 30) 40%,
+        rgb(158, 191, 218) 75%,
+        rgb(125, 177, 221) 88%
+      );
+      z-index: 99;
+    }
+  }
+}
+
+.mantine-InputWrapper-error {
+  font-size: 0.75rem;
+  transform: translateY(110%);
+}

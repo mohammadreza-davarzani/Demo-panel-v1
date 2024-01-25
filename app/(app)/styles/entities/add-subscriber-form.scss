@@ -1,0 +1,28 @@
+.subscriber-management {
+  &-title {
+    font-size: large;
+    margin-top: 0.5rem;
+  }
+
+  &-add-contact {
+    display: flex !important;
+    margin: 0 auto;
+    justify-content: flex-end !important;
+    align-items: flex-end !important;
+    justify-items: flex-end;
+  }
+
+  &-delete-icon {
+    color: #d22600 !important;
+  }
+
+  &-table {
+    display: flex;
+    justify-content: space-between;
+
+    span {
+      text-align: center;
+      margin-top: 0.5rem;
+    }
+  }
+}

@@ -1,0 +1,14 @@
+.subscriber-management {
+  &-empty-content {
+    display: flex !important;
+    flex-direction: column !important;
+    &-label {
+      color: #228be6 !important;
+      text-align: center;
+    }
+    &-describtion {
+      color: #228be6 !important;
+      text-align: center;
+    }
+  }
+}

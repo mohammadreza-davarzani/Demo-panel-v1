@@ -1,0 +1,17 @@
+.sms {
+  &-text-information {
+    display: flex;
+    margin-top: 0.25rem;
+    align-items: center;
+    justify-content: space-between;
+    &-language {
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+    &-length {
+      text-align: left;
+      font-size: 0.875rem;
+      line-height: 1.25rem;
+    }
+  }
+}

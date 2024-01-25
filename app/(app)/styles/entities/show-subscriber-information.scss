@@ -1,0 +1,49 @@
+.confirm-modal {
+  &-icon-success {
+    flex-direction: column;
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    div {
+      margin-top: 1.5rem;
+    }
+  }
+
+  &-input-wrapper {
+    width: 100%;
+    margin: 0 auto 4.5rem;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    label {
+      margin-left: 0.5rem;
+      margin-top: 0.8rem;
+    }
+  }
+
+  &-input-item {
+    display: flex;
+    flex-direction: row;
+    justify-items: center;
+    align-items: center;
+    max-width: 100%;
+  }
+
+  &-contact {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 1.5rem auto 0;
+
+    &-card {
+      background-color: #e6e6e6;
+      width: 40%;
+    }
+  }
+}

@@ -1,0 +1,16 @@
+@import "~react-toastify/scss/main";
+:root {
+  --toastify-color-transparent: rgba(0, 0, 0, 0.3);
+  --toastify-toast-min-height: 56px;
+
+  /* Custom Success */
+  --toastify-color-success: #00a961;
+  --toastify-icon-color-success: #00634b;
+  --toastify-color-progress-success: #00634b;
+  --toastify-text-color-success: #fff;
+  /* Custom Error */
+  --toastify-color-error: #e00000;
+  --toastify-icon-color-error: #940101;
+  --toastify-color-progress-error: #940101;
+  --toastify-text-color-error: #fff;
+}
