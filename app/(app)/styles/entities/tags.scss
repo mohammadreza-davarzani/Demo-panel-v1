@@ -1,0 +1,18 @@
+.sms {
+  &-badge {
+    cursor: pointer;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    padding-bottom: 0.75;
+    div {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: space-between;
+      p {
+        margin-top: 0.25rem;
+        margin-right: 0.25rem;
+      }
+    }
+  }
+}
